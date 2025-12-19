@@ -1,0 +1,109 @@
+/* SideItemList.css */
+
+.sideitem-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sideitem-item {
+  margin: 1rem 0;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.sideitem-header {
+  padding: 1rem;
+  background-color: #fafafa;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  color: #333;
+  transition: background-color 0.2s ease;
+}
+
+.sideitem-header:hover {
+  background-color: #f0f8ff;
+}
+
+.sideitem-header.open {
+  background-color: #f0f8ff;
+}
+
+.add-side {
+  display: block;
+  margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
+  background:  #ff6b35;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.add-side:hover { background: #e55a2b; }
+
+.sideitem-icon {
+  font-size: 1.2rem;
+  color: #0066cc;
+  font-weight: bold;
+}
+
+.sideitem-details {
+  padding: 0 1rem 1rem;
+  border-top: 1px solid #eee;
+  background-color: #fdfdfd;
+}
+
+.sideitem-details p {
+  margin: 0.5rem 0;
+  line-height: 1.5;
+}
+
+.sideitem-details strong {
+  color: #444;
+}
+
+.sideitem-container { max-width: 800px; margin: 2rem auto; }
+
+.add-btn {
+  display: block;
+  margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.add-btn:hover { background: #218838; }
+
+.edit-form {
+  display: grid;
+  gap: 0.5rem;
+  padding: 0.75rem;
+  background: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+}
+.edit-form input {
+  padding: 0.4rem;
+  font: inherit;
+}
+.form-actions { display: flex; gap: 0.5rem; margin-top: 0.5rem; }
+.form-actions button { flex: 1; }
+
+.delete-btn {
+  background: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.delete-btn:hover { background: #c82333; }
+
+.sideitem-header { cursor: pointer; }

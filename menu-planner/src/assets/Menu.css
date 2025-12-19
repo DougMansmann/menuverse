@@ -1,0 +1,235 @@
+/* Menu.css */
+.menu-container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 2rem;
+}
+
+.selector-card {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  text-align: center;
+  max-width: 420px;
+  margin: 0 auto 3rem auto;
+}
+
+.selector-card label {
+  display: block;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: #34495e;
+  font-weight: 500;
+}
+
+.selector-card select {
+  padding: 14px 18px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  border: 2px solid #ddd;
+  width: 100%;
+  max-width: 320px;
+  cursor: pointer;
+}
+
+.menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.menu-header h2 {
+  margin: 0;
+  color: #2c3e50;
+}
+
+.change-days,
+.accept-menu {
+  padding: 10px 18px;
+  background: #e67e22;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+.change-days:hover,
+.accept-menu:hover {
+  background: #d35400;
+}
+
+/* Make Accept button the primary action */
+.accept-menu {
+  background: #e74c3c;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.accept-menu:hover {
+  background: #c0392b;
+}
+
+.loading-text {
+  color: #7f8c8d;
+  font-style: italic;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.8rem;
+}
+
+.day-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.8rem;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.day-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+.day-card h3 {
+  margin: 0 0 1.2rem 0;
+  color: #2980b9;
+  font-size: 1.5rem;
+}
+
+.course h4 {
+  margin: 0 0 0.6rem 0;
+  font-size: 1.35rem;
+  color: #2c3e50;
+}
+
+.description {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.tag {
+  display: inline-block;
+  background: #3498db;
+  color: white;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+
+.tag-category   { background: blue; color: white; }
+.tag-origin     { background: red; color: white; } 
+.tag-sides      { background: green; color: white; } 
+
+/*
+.orgin {
+  display: inline-block;
+  background: #e74c3c;
+  color: white;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.sides {
+  display: inline-block;
+  background: #3ce745;
+  color: white;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+  */
+
+/* Side dishes styling */
+  .sides-section {
+    margin-top: 1.2rem;
+    padding-top: 1rem;
+    border-top: 1px dashed #ddd;
+  }
+
+.sides-section h5 {
+    margin: 0 0 0.6rem 0;
+    color: #2c3e50;
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+
+  /* New styles – no bullets, just indented text */
+  .sides-list {
+    margin: 0.8rem 0 0.6rem 0;
+    padding-left: 0;          /* remove default padding */
+    list-style: none;         /* remove bullets */
+  }
+
+  .sides-list li {
+    margin: 0.4rem 0;
+    color: #444;
+    font-size: 1rem;
+    padding-left: 1.6rem;     /* this creates the indent from the "S" */
+    text-indent: -1.2rem;     /* pulls the first line back so text aligns nicely */
+  }
+
+  .loading-text.sides-loading {
+    font-size: 0.95rem;
+    color: #7f8c8d;
+    font-style: italic;
+    margin-top: 0.5rem;
+  }
+
+  .no-sides {
+    color: #95a5a6;
+    font-style: italic;
+    margin-top: 0.8rem;
+  }
+
+.reject-btn {
+  margin-top: 1.2rem;
+  padding: 12px 18px;
+  background: #e67e22;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  width: 100%;
+  transition: background 0.2s;
+}
+
+.reject-btn:hover {
+  background: #d35400;
+}
+
+@media (max-width: 600px) {
+  .menu-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+}
