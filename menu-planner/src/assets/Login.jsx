@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
-import "./Login.css"; // Reuse existing styles, or create Login.css
+import "./Login.css";
+import logo from "./menuverse.png"; // Keep the import!
 
 export default function Login() {
   const [username, setUsername] = useState("");
@@ -21,19 +22,15 @@ export default function Login() {
         throw new Error("Login failed. Check your credentials.");
       }
       const data = await response.json();
-      localStorage.setItem("token", data.token); // Store JWT
-      navigate("/"); // Redirect to home
+      localStorage.setItem("token", data.token);
+      navigate("/");
     } catch (err) {
       setError(err.message);
-      if (response?.status === 401) {
-        // Optional: Clear any stale token
-        localStorage.removeItem("token");
-      }
     }
   };
 
   return (
-    <div className="login-container"> {/* Reuse your styles */}
+    <div className="login-container" style={{ backgroundImage: `url(${logo})` }}>
       <h2>Login to Menuverse</h2>
       {error && <p className="error">{error}</p>}
       <form onSubmit={handleSubmit}>

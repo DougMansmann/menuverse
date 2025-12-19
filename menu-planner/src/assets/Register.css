@@ -8,6 +8,26 @@
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  /* Watermark styles */
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 60% auto;
+  position: relative;
+}
+
+.register-container::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 12px;
+  z-index: 1;
+}
+
+.register-container > * {
+  position: relative;
+  z-index: 2;
 }
 
 .register-container h2 {
@@ -31,9 +51,13 @@ form {
 
 .field-row {
   display: grid;
-  grid-template-columns: 150px 1fr; /* Label width | input takes rest */
+  grid-template-columns: 150px 1fr;
   gap: 0.75rem;
   align-items: center;
+}
+
+.checkbox-row {
+  align-items: start;
 }
 
 .field-row label {
@@ -49,6 +73,10 @@ form {
   border: 1px solid #ccc;
   border-radius: 4px;
   font: inherit;
+}
+
+.checkbox-row input[type="checkbox"] {
+  width: auto;
 }
 
 .fetch-btn {
@@ -84,6 +112,24 @@ form {
   text-decoration: underline;
 }
 
+.password-hint {
+  font-size: 0.85rem;
+  color: #666;
+  line-height: 1.4;
+  margin-top: 1.5rem;
+  text-align: center;
+  background: #f8f9fa;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #e9ecef;
+}
+
+/* Optional: highlight password fields when there's an error */
+.error ~ .field-row input[type="password"],
+.field-row input[type="password"]:invalid {
+  border-color: #dc3545;
+}
+
 /* Responsive */
 @media (max-width: 600px) {
   .field-row {
@@ -94,5 +140,9 @@ form {
   .field-row label {
     text-align: left;
     margin-bottom: 0.25rem;
+  }
+
+  .checkbox-row label {
+    white-space: normal;
   }
 }

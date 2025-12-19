@@ -1,5 +1,6 @@
 /* Login.css */
 
+
 .login-container {
   max-width: 600px;
   margin: 2rem auto;
@@ -8,6 +9,35 @@
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  /* Watermark background */
+  background-image: var(--watermark-image); /* We'll set this inline */
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 60% auto; /* Adjust size: 60% of container width is usually good */
+  opacity: 1; /* Container stays fully opaque */
+  position: relative; /* Needed for potential overlay if desired */
+}
+
+/* Optional: Add a semi-transparent overlay to make form text more readable */
+.login-container::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(255, 255, 255, 0.85); /* White overlay to soften watermark */
+  border-radius: 12px;
+  z-index: 1;
+}
+
+/* Ensure form content appears above the watermark/overlay */
+.login-container > * {
+  position: relative;
+  z-index: 2;
+}
+
+/* Remove the old logo-header styles since we're not using it anymore */
+.logo-header {
+  display: none; /* Or just delete these rules */
 }
 
 .login-container h2 {
@@ -82,6 +112,17 @@ form {
 
 .login-container a:hover {
   text-decoration: underline;
+}
+
+/* Logo Header */
+.logo-header {
+  padding: 1rem;
+  background: var(--sidebar-bg);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.logo {
+  height: 48px;
+  width: auto;
 }
 
 /* Responsive */
