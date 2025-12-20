@@ -34,7 +34,7 @@ const MealDetail = () => {
 
     const isSide = meal.strCategory?.toLowerCase() === 'side';
     const endpoint = isSide
-      ? 'http://localhost:8080/api/sideitem'
+      ? 'http://localhost:8080/api/sides'
       : 'http://localhost:8080/api/maincourse';
 
     const payload = {
