@@ -19,8 +19,8 @@ Menuverse is a demonstration of full-stack development, featuring a responsive f
 
 ## Demo/Screenshots
 <!-- Add screenshots here! Upload images to the repo or use external links -->
-![Login Page](menu-planner/screenshots/login.png)
-![Registration Page](menu-planner/screenshots/registrtion.png)
+![Login Page](/menu-planner/screenshots/login.png)
+![Registration Page](/menu-planner/screenshots/registrtion.png)
 *(Replace with actual images/GIFs showing the app running)*
 
 ## Features
