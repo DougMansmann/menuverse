@@ -19,9 +19,29 @@ Menuverse is a demonstration of full-stack development, featuring a responsive f
 
 ## Demo/Screenshots
 <!-- Add screenshots here! Upload images to the repo or use external links -->
-![Login Page](/menuverse/menu-planner/screenshots/Login.png)
-![Test](https://github.com/DougMansmann/menuverse/blob/main/menu-planner/screenshots/Login.png)
-![Registration Page](/menuverse/menu-planner/screenshots/registrtion.png)
+![Login Page](https://github.com/DougMansmann/menuverse/blob/main/menu-planner/screenshots/Login.png)
+![Registration Page](https://github.com/DougMansmann/menuverse/blob/main/menu-planner/screenshots/Registrtion.png)
+![Login Page Filled In](https://github.com/DougMansmann/menuverse/blob/main/menu-planner/screenshots\Login_filled.png)
+![Welcome Page](https://github.com/DougMansmann/menuverse/blob/main/menu-planner/screenshots/Welcome.png)
+![Main Course List](https://github.com/DougMansmann/menuverse/blob/main/menu-planner/screenshots/MainCourse_list.png)
+![Main Course Add](https://github.com/DougMansmann/menuverse/blob/main/menu-planner/screenshots/MainCourse_add_category.png)
+![Main Course Add Orgin](https://github.com/DougMansmann/menuverse/blob/main/menu-planner/screenshots/MainCourse_add_orgin.png)
+![Main Course Add Num Sides](https://github.com/DougMansmann/menuverse/blob/main/menu-planner/screenshots/MainCourse_add_numsides.png)
+![Main Course Edit](https://github.com/DougMansmann/menuverse/blob/main/menu-planner/screenshots/MainCourse_edit.png)
+![Side Item List](https://github.com/DougMansmann/menuverse/blob/main/menu-planner/screenshots/SideItem_list.png)
+![Side Item Add](https://github.com/DougMansmann/menuverse/blob/main/menu-planner/screenshots/SideItem_add.png)
+![Side Item Add Complete](https://github.com/DougMansmann/menuverse/blob/main/menu-planner/screenshots/SideItem_add_complete.png)
+![Side Item Edit](https://github.com/DougMansmann/menuverse/blob/main/menu-planner/screenshots/SideItem_edit.png)
+![Web Meal Search](https://github.com/DougMansmann/menuverse/blob/main/menu-planner/screenshots/MealSearch.png)
+![Web Meal Search Side Item](https://github.com/DougMansmann/menuverse/blob/main/menu-planner/screenshots/MealSearch_side.png)
+![Web Meal Search Side Item Selected](https://github.com/DougMansmann/menuverse/blob/main/menu-planner/screenshots/MealSearch_side_selected.png)
+![Web Meal Search Main Course Selected](https://github.com/DougMansmann/menuverse/blob/main/menu-planner/screenshots/MealSearch_main_selected.png)
+![Menu Creation](https://github.com/DougMansmann/menuverse/blob/main/menu-planner/screenshots/Menu_choice.png)
+![Menu Creation Selection](https://github.com/DougMansmann/menuverse/blob/main/menu-planner/screenshots/Menu_selection.png)
+![Menu Creation Change Option](https://github.com/DougMansmann/menuverse/blob/main/menu-planner/screenshots/Menu_changed.png)
+![About Page](https://github.com/DougMansmann/menuverse/blob/main/menu-planner/screenshots/About.png)
+![Contact Page](https://github.com/DougMansmann/menuverse/blob/main/menu-planner/screenshots/Contact.png)
+![Logout Option](https://github.com/DougMansmann/menuverse/blob/main/menu-planner/screenshots/Logout_choice.png)
 *(Replace with actual images/GIFs showing the app running)*
 
 ## Features
