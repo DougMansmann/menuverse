@@ -50,9 +50,9 @@ Meal Search Page - Remote API call to get data
 ![Web Meal Search](https://github.com/DougMansmann/menuverse/blob/main/menu-planner/screenshots/MealSearch.png)
 Meal Search Page Side Item - Remote API call to get data
 ![Web Meal Search Side Item](https://github.com/DougMansmann/menuverse/blob/main/menu-planner/screenshots/MealSearch_side.png)
-Meal Search Page Side Item Selected - Remote API call to get data - Can add item to daatabase
+Meal Search Page Side Item Selected - Remote API call to get data - Can add item to database
 ![Web Meal Search Side Item Selected](https://github.com/DougMansmann/menuverse/blob/main/menu-planner/screenshots/MealSearch_side_selected.png)
-Meal Search Page Main Course Selected - Remote API call to get data - Can add item to daatabase
+Meal Search Page Main Course Selected - Remote API call to get data - Can add item to database
 ![Web Meal Search Main Course Selected](https://github.com/DougMansmann/menuverse/blob/main/menu-planner/screenshots/MealSearch_main_selected.png)
 Menu Creation - Number of Days to Create Menu For
 ![Menu Creation](https://github.com/DougMansmann/menuverse/blob/main/menu-planner/screenshots/Menu_choice.png)
