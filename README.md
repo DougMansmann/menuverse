@@ -26,7 +26,7 @@ to User tables.  (Email address is requested, but is not used as of First Releas
 ![Registration Page](https://github.com/DougMansmann/menuverse/blob/main/menu-planner/screenshots/Register.png)
 This is the Login Page after User filled in Login/Password
 ![Login Page Filled In](https://github.com/DougMansmann/menuverse/blob/main/menu-planner/screenshots/Login_filled.png)
-This is the Home/Welcome Page -- choose one of the tabs on right to start creating menus
+This is the Home/Welcome Page -- choose one of the tabs on left to start creating menus
 ![Welcome Page](https://github.com/DougMansmann/menuverse/blob/main/menu-planner/screenshots/Welcome.png)
 Main Course List (User can Add or Edit existing)
 ![Main Course List](https://github.com/DougMansmann/menuverse/blob/main/menu-planner/screenshots/MainCourse_list.png)
