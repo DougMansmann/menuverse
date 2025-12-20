@@ -46,7 +46,7 @@ Side Item Add Filled In
 ![Side Item Add Complete](https://github.com/DougMansmann/menuverse/blob/main/menu-planner/screenshots/SideItem_add_complete.png)
 Side Item Edit Page
 ![Side Item Edit](https://github.com/DougMansmann/menuverse/blob/main/menu-planner/screenshots/SideItem_edit.png)
-Meal Search Page - Remote API call to get data
+Meal Search Page - Remote API call (https://www.themealdb.com/api/json/v1) to get data 
 ![Web Meal Search](https://github.com/DougMansmann/menuverse/blob/main/menu-planner/screenshots/MealSearch.png)
 Meal Search Page Side Item - Remote API call to get data
 ![Web Meal Search Side Item](https://github.com/DougMansmann/menuverse/blob/main/menu-planner/screenshots/MealSearch_side.png)
@@ -68,11 +68,11 @@ Logout of the Web Site
 ![Logout Option](https://github.com/DougMansmann/menuverse/blob/main/menu-planner/screenshots/Logout_choice.png)
 
 ## Features
-- Create and customize weekly meal menus
-- Search/add recipes or items
-- Backend API for data persistence (e.g., saving menus)
-- Responsive UI for desktop/mobile
-- [Add more based on what your app does]
+- Create and customize daily meal menus
+- Search/add main course and/or side items
+- Backend API for data persistence (e.g., saving main courses and side items)
+- Responsive UI for desktop
+- Remote API For menu ideas (https://www.themealdb.com/api/json/v1)
 
 ## Tech Stack
 - **Frontend**: JavaScript (Node.js), HTML, CSS (in `menu-planner/` folder)
