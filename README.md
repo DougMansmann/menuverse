@@ -19,15 +19,60 @@ Menuverse is a demonstration of full-stack development, featuring a responsive f
 
 ## Demo/Screenshots
 <!-- Add screenshots here! Upload images to the repo or use external links -->
-![Screenshot of Menu Planner](screenshots/homepage.png)  
-*(Replace with actual images/GIFs showing the app running)*
+Prompt User to Login or Create an Account
+![Login Page](https://github.com/DougMansmann/menuverse/blob/main/menu-planner/screenshots/Login.png)
+This is the Create User Registration Page (User must be unique).  If user leaves box checked, default items are loaded
+to User tables.  (Email address is requested, but is not used as of First Release)
+![Registration Page](https://github.com/DougMansmann/menuverse/blob/main/menu-planner/screenshots/Register.png)
+This is the Login Page after User filled in Login/Password
+![Login Page Filled In](https://github.com/DougMansmann/menuverse/blob/main/menu-planner/screenshots/Login_filled.png)
+This is the Home/Welcome Page -- choose one of the tabs on left to start creating menus
+![Welcome Page](https://github.com/DougMansmann/menuverse/blob/main/menu-planner/screenshots/Welcome.png)
+Main Course List (User can Add or Edit existing)
+![Main Course List](https://github.com/DougMansmann/menuverse/blob/main/menu-planner/screenshots/MainCourse_list.png)
+Main Course Add (showing category - free text)
+![Main Course Add](https://github.com/DougMansmann/menuverse/blob/main/menu-planner/screenshots/MainCourse_add_category.png)
+Main Course Add (showing orgin - free text)
+![Main Course Add Orgin](https://github.com/DougMansmann/menuverse/blob/main/menu-planner/screenshots/MainCourse_add_orgin.png)
+Main Course Add (showing number sides to have with main course)
+![Main Course Add Num Sides](https://github.com/DougMansmann/menuverse/blob/main/menu-planner/screenshots/MainCourse_add_numsides.png)
+Main Course Edit Page
+![Main Course Edit](https://github.com/DougMansmann/menuverse/blob/main/menu-planner/screenshots/MainCourse_edit.png)
+Side Item List (User can Add or Edit existing)
+![Side Item List](https://github.com/DougMansmann/menuverse/blob/main/menu-planner/screenshots/SideItem_list.png)
+Side Item Add Page
+![Side Item Add](https://github.com/DougMansmann/menuverse/blob/main/menu-planner/screenshots/SideItem_add.png)
+Side Item Add Filled In 
+![Side Item Add Complete](https://github.com/DougMansmann/menuverse/blob/main/menu-planner/screenshots/SideItem_add_complete.png)
+Side Item Edit Page
+![Side Item Edit](https://github.com/DougMansmann/menuverse/blob/main/menu-planner/screenshots/SideItem_edit.png)
+Meal Search Page - Remote API call (https://www.themealdb.com/api/json/v1) to get data 
+![Web Meal Search](https://github.com/DougMansmann/menuverse/blob/main/menu-planner/screenshots/MealSearch.png)
+Meal Search Page Side Item - Remote API call to get data
+![Web Meal Search Side Item](https://github.com/DougMansmann/menuverse/blob/main/menu-planner/screenshots/MealSearch_side.png)
+Meal Search Page Side Item Selected - Remote API call to get data - Can add item to database
+![Web Meal Search Side Item Selected](https://github.com/DougMansmann/menuverse/blob/main/menu-planner/screenshots/MealSearch_side_selected.png)
+Meal Search Page Main Course Selected - Remote API call to get data - Can add item to database
+![Web Meal Search Main Course Selected](https://github.com/DougMansmann/menuverse/blob/main/menu-planner/screenshots/MealSearch_main_selected.png)
+Menu Creation - Number of Days to Create Menu For
+![Menu Creation](https://github.com/DougMansmann/menuverse/blob/main/menu-planner/screenshots/Menu_choice.png)
+Menu Creation List
+![Menu Creation Selection](https://github.com/DougMansmann/menuverse/blob/main/menu-planner/screenshots/Menu_selection.png)
+Menu Creation Changed One of the Choices
+![Menu Creation Change Option](https://github.com/DougMansmann/menuverse/blob/main/menu-planner/screenshots/Menu_changed.png)
+About Web Site
+![About Page](https://github.com/DougMansmann/menuverse/blob/main/menu-planner/screenshots/About.png)
+Contact Information
+![Contact Page](https://github.com/DougMansmann/menuverse/blob/main/menu-planner/screenshots/Contact.png)
+Logout of the Web Site
+![Logout Option](https://github.com/DougMansmann/menuverse/blob/main/menu-planner/screenshots/Logout_choice.png)
 
 ## Features
-- Create and customize weekly meal menus
-- Search/add recipes or items
-- Backend API for data persistence (e.g., saving menus)
-- Responsive UI for desktop/mobile
-- [Add more based on what your app does]
+- Create and customize daily meal menus
+- Search/add main course and/or side items
+- Backend API for data persistence (e.g., saving main courses and side items)
+- Responsive UI for desktop
+- Remote API For menu ideas (https://www.themealdb.com/api/json/v1)
 
 ## Tech Stack
 - **Frontend**: JavaScript (Node.js), HTML, CSS (in `menu-planner/` folder)
