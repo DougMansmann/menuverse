@@ -19,13 +19,13 @@ Menuverse is a demonstration of full-stack development, featuring a responsive f
 
 ## Demo/Screenshots
 <!-- Add screenshots here! Upload images to the repo or use external links -->
-Prompt User to Login or Create an Account (Email address is requested, but is not used as of First Release)
+Prompt User to Login or Create an Account
 ![Login Page](https://github.com/DougMansmann/menuverse/blob/main/menu-planner/screenshots/Login.png)
 This is the Create User Registration Page (User must be unique).  If user leaves box checked, default items are loaded
-to User tables.
+to User tables.  (Email address is requested, but is not used as of First Release)
 ![Registration Page](https://github.com/DougMansmann/menuverse/blob/main/menu-planner/screenshots/Register.png)
 This is the Login Page after User filled in Login/Password
-![Login Page Filled In](https://github.com/DougMansmann/menuverse/blob/main/menu-planner/screenshots/Login_filled)
+![Login Page Filled In](https://github.com/DougMansmann/menuverse/blob/main/menu-planner/screenshots/Login_filled.png)
 This is the Home/Welcome Page -- choose one of the tabs on right to start creating menus
 ![Welcome Page](https://github.com/DougMansmann/menuverse/blob/main/menu-planner/screenshots/Welcome.png)
 Main Course List (User can Add or Edit existing)
