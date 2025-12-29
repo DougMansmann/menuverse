@@ -30,8 +30,8 @@ public class MainCourse {
     @Column(name = "category")
     private String category;    
     
-    @Column(name = "orgin")
-    private String orgin;   
+    @Column(name = "origin")
+    private String origin;   
 
     @Column(name = "menuapi_id")
     private Integer menuapi_id;
@@ -58,8 +58,8 @@ public class MainCourse {
     public String getCategory() { return category; }
     public void setCategory(String category) { this.category = category; }
 
-    public String getOrgin() { return orgin; }
-    public void setOrgin(String orgin) { this.orgin = orgin; }  
+    public String getOrigin() { return origin; }
+    public void setOrigin(String origin) { this.origin = origin; }  
 
     public Integer getMenuapi_id() { return menuapi_id; }
     public void setMenuapi_id(Integer menuapi_id) { this.menuapi_id = menuapi_id; } 

@@ -106,7 +106,7 @@ public class MainCourseService {
     // ---- helpers ----
     private MainCourseDTO toDTO(MainCourse e) {
         return new MainCourseDTO(e.getId(), e.getName(), 
-                e.getDaysBetween(), e.getLastTime(), e.getCategory(), e.getOrgin(), e.getMenuapi_id(), e.getNumsides());
+                e.getDaysBetween(), e.getLastTime(), e.getCategory(), e.getOrigin(), e.getMenuapi_id(), e.getNumsides());
     }
 
     private void copyDtoToEntity(MainCourseDTO d, MainCourse e) {
@@ -114,7 +114,7 @@ public class MainCourseService {
         e.setDaysBetween(d.daysBetween());
         e.setLastTime(d.lastTime());
         e.setCategory(d.category());
-        e.setOrgin(d.orgin());
+        e.setOrigin(d.origin());
         e.setMenuapi_id(d.menuapi_id());
         e.setNumsides(d.numsides());
     }

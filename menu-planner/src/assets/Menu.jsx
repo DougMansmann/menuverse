@@ -336,14 +336,12 @@ const generatePrintableMenu = () => {
                   ) : item.course ? (
                     <div className="course">
                       <h4>{item.course.name}</h4>
-                      <p className="description">{item.course.description}</p>
-
-                      <div className="tags">
+                        <div className="tags">
                         {item.course.category && (
                           <span className="tag tag-category">{item.course.category}</span>
                         )}
-                        {item.course.orgin && (
-                          <span className="tag tag-origin">{item.course.orgin}</span>
+                        {item.course.origin && (
+                          <span className="tag tag-origin">{item.course.origin}</span>
                         )}
                         {item.course.numsides > 0 && (
                           <span className="tag tag-sides">Sides: {item.course.numsides}</span>

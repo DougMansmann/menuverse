@@ -10,7 +10,7 @@ public record MainCourseDTO(
         @NotNull Integer daysBetween,
         java.time.LocalDate lastTime,
         String category,
-        String orgin,
+        String origin,
         Integer menuapi_id,
         Integer numsides
 ) {}

@@ -40,7 +40,7 @@ const MealDetail = () => {
     const payload = {
       name: meal.strMeal,
       category: meal.strCategory, 
-      orgin: meal.strArea,
+      origin: meal.strArea,
       daysBetween: 28,
       numsides: 0,
       // lastTime: new Date().toISOString().split('T')[0],  <-- this was current date
