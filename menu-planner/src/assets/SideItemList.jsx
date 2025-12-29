@@ -16,7 +16,6 @@ export default function SideItemList() {
   const [form, setForm] = useState({
     name: "",
     type: "",
-    description: "",
     daysBetween: "30",
     lastTime: "2025-01-01",
    });
@@ -48,7 +47,6 @@ export default function SideItemList() {
     setForm({
       name: side.name || "",
       type: side.type || "",  
-      description: side.description || "",
       daysBetween: side.daysBetween || "",
       lastTime: side.lastTime?.trim() ? side.lastTime.trim() : "2025-01-01",
     });
@@ -56,12 +54,12 @@ export default function SideItemList() {
 
   const startAdd = () => {
     setEditingId("new");
-    setForm({ name: "", type: "", description: "", daysBetween: "", lastTime: "2025-01-01" });
+    setForm({ name: "", type: "", daysBetween: "", lastTime: "2025-01-01" });
   };
 
   const cancelEdit = () => {
     setEditingId(null);
-    setForm({ name: "", type: "", description: "", daysBetween: "", lastTime: ""});
+    setForm({ name: "", type: "", daysBetween: "", lastTime: ""});
   };
 
   const formatDate = (isoString) => {
@@ -77,7 +75,6 @@ export default function SideItemList() {
     const payload = {
       name: form.name.trim(),
       type: form.type.trim() || null,
-      description: form.description.trim() || null,
       daysBetween: form.daysBetween === "" ? null : Number(form.daysBetween),
       lastTime: form.lastTime?.trim() ? form.lastTime.trim() : "2025-01-01",
     };
@@ -195,11 +192,6 @@ export default function SideItemList() {
                       <strong>Type:</strong> {side.type}
                     </p>
                   )}
-                  {side.description && (
-                    <p>
-                      <strong>Description:</strong> {side.description}
-                    </p>
-                  )}
                   {side.daysBetween !== undefined && (
                     <p>
                       <strong>Minimum Days Between Serving:</strong>{" "}
@@ -244,12 +236,6 @@ function EditForm({ form, setForm, onSave, onCancel, extraActions }) {
         name="type"
         placeholder="Type of Side Item (optional)"
         value={form.type }
-        onChange={handleChange}
-      />
-      <input
-        name="description"
-        placeholder="Description (optional)"
-        value={form.description}
         onChange={handleChange}
       />
       <input

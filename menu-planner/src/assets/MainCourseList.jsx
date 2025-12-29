@@ -19,7 +19,7 @@ export default function MainCourseList() {
     lastTime: "",
     category: "",
     menuap_id: "",
-    orgin: "",
+    origin: "",
     numsides: "0",
   });
 
@@ -53,19 +53,19 @@ const fetchCourses = async () => { // ASYNC function
       lastTime: course.lastTime || "",
       category: course.category || "",
       menuap_id: course.menuap_id || "",
-      orgin: course.orgin || "",
+      origin: course.origin || "",
       numsides: course.numsides ?? "0",
     });
   };
 
   const startAdd = () => {
     setEditingId("new");
-    setForm({ name: "", daysBetween: "7", lastTime: "2025-01-01", category: "", menuap_id: "", orgin: "", numsides: "0"});
+    setForm({ name: "", daysBetween: "7", lastTime: "2025-01-01", category: "", menuap_id: "", origin: "", numsides: "0"});
   };
 
   const cancelEdit = () => {
     setEditingId(null);
-    setForm({ name: "", daysBetween: "", lastTime: "", category: "", menuap_id: "", orgin: "", numsides: "" });
+    setForm({ name: "", daysBetween: "", lastTime: "", category: "", menuap_id: "", origin: "", numsides: "" });
   };
 
   const formatDate = (isoString) => {
@@ -84,7 +84,7 @@ const fetchCourses = async () => { // ASYNC function
       daysBetween: form.daysBetween === "" ? 7 : Number(form.daysBetween), // ← changed to 7
       lastTime: form.lastTime?.trim() ? form.lastTime.trim() : "2025-01-01",
       category: form.category.trim() || null,
-      orgin: form.orgin.trim() || null, 
+      origin: form.origin.trim() || null, 
       menuap_id: form.menuap_id === "" ? null : Number(form.menuap_id),
       numsides: form.numsides === "" ? 0 : Number(form.numsides), // ← changed to 0
     };
@@ -202,9 +202,9 @@ const deleteCourse = async (id) => { // Add async
                       <strong>Category:</strong> {course.category}
                     </p>
                   )}
-                  {course.orgin && (
+                  {course.origin && (
                     <p>
-                      <strong>Orgin:</strong> {course.orgin}
+                      <strong>Origin:</strong> {course.origin}
                     </p>
                   )}
                   {course.daysBetween !== undefined && (
@@ -290,11 +290,11 @@ function EditForm({ form, setForm, onSave, onCancel, extraActions }) {
       </div>
 
       <div className="field-row">
-        <label>Orgin:</label>
+        <label>Origin:</label>
         <input
-          name="orgin"
-          placeholder="Orgin (optional)"
-          value={form.orgin}
+          name="origin"
+          placeholder="Origin (optional)"
+          value={form.origin}
           onChange={handleChange}
         />
       </div>

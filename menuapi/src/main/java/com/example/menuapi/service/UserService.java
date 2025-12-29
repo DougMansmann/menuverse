@@ -61,7 +61,7 @@ public class UserService implements UserDetailsService {
                 copy.setDaysBetween(generic.getDaysBetween());
                 copy.setLastTime(generic.getLastTime());
                 copy.setCategory(generic.getCategory());
-                copy.setOrgin(generic.getOrgin());
+                copy.setOrigin(generic.getOrigin());
                 copy.setMenuapi_id(generic.getMenuapi_id());
                 copy.setNumsides(generic.getNumsides());
                 copy.setUser(savedUser);  // Assign to new user
@@ -74,7 +74,6 @@ public class UserService implements UserDetailsService {
                 SideItem copy = new SideItem();
                 copy.setName(generic.getName());
                 copy.setType(generic.getType());
-                copy.setDescription(generic.getDescription());
                 copy.setDaysBetween(generic.getDaysBetween());
                 copy.setLastTime(generic.getLastTime());
                 copy.setUser(savedUser);  // Assign to new user

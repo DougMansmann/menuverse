@@ -131,13 +131,11 @@ public class SideItemService {
 
     // ---- helpers ----
     private SideItemDTO toDTO(SideItem e) {
-        return new SideItemDTO(e.getId(), e.getName(), e.getType(), e.getDescription(),
-                e.getDaysBetween(), e.getLastTime());
+        return new SideItemDTO(e.getId(), e.getName(), e.getType(), e.getDaysBetween(), e.getLastTime());
     }
 
     private void copyDtoToEntity(SideItemDTO d, SideItem e) {
         e.setName(d.name());
-        e.setDescription(d.description());
         e.setType(d.type());
         e.setDaysBetween(d.daysBetween());
         e.setLastTime(d.lastTime());
