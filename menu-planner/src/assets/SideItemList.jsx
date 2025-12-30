@@ -223,42 +223,54 @@ function EditForm({ form, setForm, onSave, onCancel, extraActions }) {
   };
 
   return (
-    <>
-      <input
-        name="name"
-        placeholder="side name*"
-        value={form.name}
-        onChange={handleChange}
-        required
-        autoFocus
-      />
-      <input
-        name="type"
-        placeholder="Type of Side Item (optional)"
-        value={form.type }
-        onChange={handleChange}
-      />
-      <input
-        name="daysBetween"
-        type="number"
-        min="0"
-        placeholder="Min days between (optional)"
-        value={form.daysBetween}
-        onChange={handleChange}
-      />
-      <input
-        name="lastTime"
-        type="date"
-        placeholder="Last Time you had side item (optional)"
-        value={form.lastTime}
-        onChange={handleChange}
-      />
+    <div className="edit-form">
+      <div className="field-row">
+        <label>Side Name:</label>
+          <input
+            name="name"
+            placeholder="side name*"
+            value={form.name}
+            onChange={handleChange}
+            required
+            autoFocus
+          />
+      </div>
+      <div className="field-row">
+        <label>Type:</label>
+        <input
+            name="type"
+            placeholder="Type of Side Item (optional)"
+            value={form.type}
+          onChange={handleChange}
+        />
+      </div>
+      <div className="field-row">
+        <label>Days Between Serving:</label>  
+        <input
+            name="daysBetween"
+            type="number"
+            min="0"
+            placeholder="Min days between (optional)"
+            value={form.daysBetween}
+            onChange={handleChange}
+          />
+      </div>
+      <div className="field-row">
+        <label>Last Time Served:</label>  
+        <input
+          name="lastTime"
+          type="date"
+          placeholder="Last Time you had side item (optional)"
+          value={form.lastTime}
+          onChange={handleChange}
+        />
+      </div>
 
       <div className="form-actions">
         <button onClick={onSave}>Save</button>
         <button onClick={onCancel}>Cancel</button>
         {extraActions}
       </div>
-    </>
+    </div>
   );
 }
